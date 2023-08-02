@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+img {
+  max-width: 100%;
+}
+main {
+  padding: 1.5em;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.logo-div {
+  margin-right: auto;
+}
+.list-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  /* border: 1px solid firebrick; */
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin-right: 2em;
+  color: var(--MediumGray);
+}
+li a {
+  color: var(--MediumGray);
+  text-decoration: none;
+}
+li:hover {
+  cursor: pointer;
+  color: var(--AlmostBlack);
+}
+li a:hover {
+  color: var(--AlmostBlack);
+}
+.header-btn {
+  padding: 0.4em;
+  background-color: white;
+  border: 1px solid var(--MediumGray);
+  border-radius: 0.5rem;
+  width: 40%;
+}
+.header-btn a {
+  color: var(--MediumGray);
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+.header-btn:hover {
+  border: 1px solid var();
+}
+.header-btn a:hover {
+  color: var(--AlmostBlack);
+}
+button a {
+  text-decoration: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.right-ul {
+  margin-left: auto;
+  /* border: 1px solid firebrick; */
+  width: 15%;
+}
+.main-sctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 4em;
+}
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  width: 100%;
+  line-height: 0.9em;
+  margin-bottom: 1em;
+  color: var(--AlmostBlack);
+}
+.txt-sctn {
+  width: 40%;
+}
+.txt-sctn p {
+  font-size: 1.125rem;
+  color: var(--MediumGray);
+  width: 90%;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+}
+.txt-btn {
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  border: none;
+  padding: 0.7em;
+  border-radius: 0.6rem;
+  width: 23%;
+  margin-bottom: 7em;
+}
+.txt-btn a {
+  color: var(--AlmostWhite);
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+.logos {
+  display: flex;
+}
+.logos img {
+  margin-right: 2em;
+  width: 15%;
+}
+.img-sctn {
+  width: 35%;
+}
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--MediumGray);
+}
+.ftr,
+.cpny {
+  overflow: hidden;
+}
+.ftr img,
+.cpny img {
+  margin-left: 0.6em;
+}
+.ftr-content,
+.cpny-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 0.8em;
+  margin-top: 1em;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#rotate1, #rotate2{
+  transform: rotateX(0deg);
+  transform-origin: 0 0;
+  transition: transform 2ms linear;
+}
+#rotate1.turnover, #rotate2.turnover{
+  transform: rotateX(180deg);
+}
+/* .arrow {
+  display: none;
+} */
+.ftr-content a,
+.cpny-content a {
+  text-decoration: none;
+  color: var(--MediumGray);
+  margin-bottom: 0.35em;
+  font-size: 1rem;
+}
+.ftr-content a:hover,
+.cpny-content a:hover {
+  cursor: pointer;
+  color: var(--AlmostBlack);
+}
+.ftr-content img {
+  margin-right: 1em;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+}
+.nav-icon1,.nav-icon2 {
+  display: none;
+}
+@media (max-width: 750px) {
+  main {
+    padding: 0;
+  }
+  .overlay{
+    background-color: var(--MediumGray);
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    transition: 0.3s ease;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    right:0;
+    left: 0;
+
+  } 
+  .overlay.active{
+    pointer-events: all;
+    opacity: 0.5;
+    width: 45%;
+  }
+  .main-sctn {
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+  .txt-sctn {
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  .img-sctn {
+    width: 100%;
+    margin-top: 1em;
+    order: 1;
+  }
+  h1 {
+    width: 100%;
+    font-size: 2.3rem;
+  }
+  .txt-sctn p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+  }
+  .txt-btn {
+    width: 30%;
+  }
+  .logos {
+    width: 90%;
+    margin: 0 auto 3em auto;
+    gap: 2.5em;
+  }
+  .logos img {
+    margin-right: 0;
+  }
+  nav {
+    padding: 1em; 
+  }
+  .list-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--AlmostWhite);
+    z-index: 3;
+    place-content: center;
+    place-items: center;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5em;
+  }
+  .list-div.active {
+    opacity: 1;
+    pointer-events: all;
+    width: 55%;
+  }
+  ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .left-ul {
+    margin-top: 3.5em;
+  }
+  .right-ul {
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+  }
+  li {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+    color: var(--AlmostBlack);
+  }
+  li a {
+    color: var(--AlmostBlack);
+  }
+  .right-ul li {
+    margin: 1em;
+    text-align: center;
+  }
+  .header-btn {
+    border: 1px solid var(--AlmostBlack);
+    color: var(--AlmostBlack);
+    padding: 0.7em;
+    width: 100%;
+  }
+  .header-btn a {
+    color: var(--AlmostBlack);
+  }
+  .nav-icon1{
+    display: block;
+  }
+  .fa-bars {
+    position: relative;
+    z-index: 5;
+    font-size: 1.75rem;
+  }
+  .fa-x{
+    position: relative;
+    z-index: 5;
+    font-size: 1.75rem;
+  }
+  .ftr-content,
+  .cpny-content {
+    border-radius: 0;
+    position: relative;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  .ftr-content a,
+  .cpny-content a {
+    margin-bottom: 0.95em;
+    font-size: 1rem;
+    display: flex;
+  }
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+}
