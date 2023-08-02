@@ -82,7 +82,6 @@ function myMobileFunction() {
       ? "block"
       : "none";
   }
-
   hamburger.addEventListener("click", toggleNavBar);
   hamburgerEx.addEventListener("click", toggleNavBar);
 }
