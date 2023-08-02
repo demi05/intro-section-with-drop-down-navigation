@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-(![Screenshot 2023-08-02 at 19 Intro section with dropdown navigation](https://github.com/demi05/intro-section-with-drop-down-navigation/assets/98643006/c68e0cac-5478-420a-95ef-0de6e83d5bab)
-)
+![Screenshot 2023-08-02 at 19-55-41 Frontend Mentor Intro section with dropdown navigation](https://github.com/demi05/intro-section-with-drop-down-navigation/assets/98643006/398aa5d7-0ef1-4635-85f9-b88ca1e22fb8)
+
 
 ### Links
 
