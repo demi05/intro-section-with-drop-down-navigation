@@ -15,6 +15,7 @@ html {
 body {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
+  background-color: var(--AlmostWhite);
 }
 img {
   max-width: 100%;
@@ -60,7 +61,7 @@ li a:hover {
 }
 .header-btn {
   padding: 0.4em;
-  background-color: white;
+  background-color: var(--AlmostWhite);
   border: 1px solid var(--MediumGray);
   border-radius: 0.5rem;
   width: 45%;
